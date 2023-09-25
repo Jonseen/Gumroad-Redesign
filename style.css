@@ -27,6 +27,9 @@ header {
     background-color: #FFFFFF;
     padding: 0em 0em 0em 3em;
     border-bottom: 2px solid #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .logo {
     padding: 1em 0em;
@@ -97,14 +100,16 @@ header {
 }
 
 .main{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     background-color: #F1F333;
+    padding-bottom: 4em;
+    border-bottom: 2px solid black;
 }
 
 .product-features {
     text-align: center;
-    padding: 7em;
+    padding: 6em;
 }
 
 .product-features h4 {
@@ -155,4 +160,70 @@ header {
     z-index: 1;
     bottom: 1em;
     left: -3.5em;
+}
+
+.activity-circle {
+    background-color: #FF90E8;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.1em;
+    border-radius: 100em;
+    border: 2px solid black;
+
+    
+}
+.inner-circle {
+    margin: 2em;
+    border: 2px solid black;
+    border-radius: 100em;
+    padding: 3em;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.main .under-left {
+    position: absolute;
+    z-index: 1;
+    bottom: -35em;
+    left: 3em;
+}
+.main .under-right {
+    position: absolute;
+    z-index: 1;
+    bottom: -30em;
+    right: 30em;
+    
+}
+.main .under-right img {
+    width: 10em;
+}
+
+.white-belt {
+    text-align: center;
+    background-color: white;
+    padding: 7em;
+}
+
+.white-belt h4 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-weight: 200;
+    font-size: 1.2em;
+}
+
+.white-belt h1 {
+    font-weight: 100;
+    font-size: 5.2em;
+}
+
+.white-belt div {
+    width: 60%;
+    margin: 0 auto;
+}
+.white-belt div p {
+    font-size: 1.5em;
+    line-height: 31px;
+    font-weight: lighter;
+    margin-top: 2em;
 }
